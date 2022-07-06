@@ -1,0 +1,24 @@
+<?xml version="1.0" ?>
+<sdf version="1.6">
+  <world name="default">
+
+    <include>
+      <uri>model://sun</uri>
+    </include>
+
+    <include>
+      <!-- located at '~/.gazebo/models/intersection' -->
+      <uri>model://intersection</uri>
+      <!-- <pose>0 0 0.05 0 0 0</pose> -->
+    </include>
+
+    <gui fullscreen="0">
+      <camera name="user_camera">
+        <!-- a tuple specifying the default starting angle and zoom for the camera -->
+        <!-- x y z roll pitch yaw -->
+        <pose>-0.017978 0.60942 21.3989 0 1.5698 -2e-06</pose>
+      </camera>
+    </gui>
+
+  </world>
+</sdf>
