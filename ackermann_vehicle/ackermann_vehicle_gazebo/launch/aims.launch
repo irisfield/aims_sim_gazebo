@@ -69,6 +69,6 @@
   </group>
 
   <!-- launch other scripts -->
-  <!-- <node pkg="ackermann_vehicle_gazebo" name="move_vehicles_test" type="move_vehicles_test.py"/> -->
+  <node pkg="ackermann_vehicle_gazebo" name="move_vehicles_test" type="move_vehicles_test.py"/>
 
 </launch>
