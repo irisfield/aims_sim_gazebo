@@ -34,7 +34,7 @@
       file="$(find ackermann_vehicle_gazebo)/launch/ackermann_vehicle.launch">
       <arg name="ugv_id" value="car2"/>
       <arg name="x" default="-6.2"/>
-      <arg name="y" default="1.3"/>
+      <arg name="y" default="-1.3"/>
       <arg name="z" default="0.1"/>
       <arg name="roll" default="0.0"/>
       <arg name="pitch" default="0.0"/>
@@ -46,7 +46,7 @@
     <include
       file="$(find ackermann_vehicle_gazebo)/launch/ackermann_vehicle.launch">
       <arg name="ugv_id" value="car3"/>
-      <arg name="x" default="-1.3"/>
+      <arg name="x" default="1.3"/>
       <arg name="y" default="-6.2"/>
       <arg name="z" default="0.1"/>
       <arg name="roll" default="0.0"/>
@@ -69,5 +69,6 @@
   </group>
 
   <!-- launch other scripts -->
+  <!-- <node pkg="ackermann_vehicle_gazebo" name="move_vehicles_test" type="move_vehicles_test.py"/> -->
 
 </launch>
