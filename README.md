@@ -6,7 +6,7 @@ This is the simulator for the [Automated Intersection Management System (AIMS)](
 ## Install
 ### 1. Clone
 Clone this repo to your `aims_ws/src` directory.
-```
+```sh
 cd ~/aims_ws/src
 git clone https://github.com/irisfield/aims_sim_gazebo.git
 ```
