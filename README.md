@@ -22,7 +22,7 @@ Go to your `aims_ws` and build your packages.
 ```sh
 cd ~/aims_ws
 catkin_make
-source devel/setup.${SHELL##*/}
+source devel/setup.sh
 ```
 
 ### 4. Intersection Model
