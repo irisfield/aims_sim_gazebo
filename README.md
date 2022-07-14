@@ -20,7 +20,7 @@ sudo apt-get install ros-$ROS_DISTRO-ros-control ros-$ROS_DISTRO-ros-controllers
 ### 3. Build
 Go to your `aims_ws` and build your packages.
 ```sh
-cd ~/<aims_ws>
+cd ~/aims_ws
 catkin_make
 source devel/setup.${SHELL##*/}
 ```
