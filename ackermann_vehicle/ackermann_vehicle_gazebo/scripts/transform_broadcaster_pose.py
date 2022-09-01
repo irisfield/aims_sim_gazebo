@@ -2,7 +2,8 @@
 import rospy
 
 import tf
-from nav_msgs.msg import Odometry
+#from nav_msgs.msg import Odometry
+from geometry_msgs.msg import Pose, PoseStamped, PoseWithCovarianceStamped, PoseArray, PointStamped
 
 ran_cb = False
 
@@ -18,7 +19,6 @@ def odomCB(msg):
     br.sendTransform((pos.x, pos.y, pos.z),
                      (r.x, r.y, r.z, r.w),
                      msg.header.stamp,
-                     msg.child_frame_id,
                      msg.header.frame_id)
 
 
@@ -27,5 +27,5 @@ if __name__ == "__main__":
     odom_topic = rospy.get_param("~odom_topic")
 
     br = tf.TransformBroadcaster()
-    rospy.Subscriber(odom_topic, Odometry, odomCB)
+    rospy.Subscriber(odom_topic, PoseStamped, odomCB)
     rospy.spin()
